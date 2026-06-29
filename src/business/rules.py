@@ -1,9 +1,4 @@
-"""Capa de reglas de negocio: traduce la predicción del modelo en una decisión.
 
-Separada del modelo a propósito: el clasificador solo dice 'qué' (sano/enfermo y
-con qué confianza); aquí decidimos 'qué hacer' con esa predicción. Cambiar la
-política de negocio (umbrales, acciones) no requiere tocar el modelo ni la API.
-"""
 from typing import Dict
 
 # Acciones posibles de negocio

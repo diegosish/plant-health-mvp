@@ -1,12 +1,3 @@
-"""Arquitectura del clasificador: EfficientNet-B0 con transfer learning.
-
-Por qué EfficientNet-B0:
-  - excelente relación precisión/costo -> liviano para inferencia y contenedor,
-  - pesos preentrenados en ImageNet -> convergencia rápida con pocos datos por clase,
-  - apto para edge/campo (modelo pequeño).
-La cabeza se deja con `num_classes` salidas (2 para binario) para poder extender
-a multiclase (madurez, tipo de enfermedad) sin reescribir la arquitectura.
-"""
 import torch.nn as nn
 from torchvision import models
 from torchvision.models import EfficientNet_B0_Weights

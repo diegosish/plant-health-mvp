@@ -1,15 +1,3 @@
-"""Entrenamiento del clasificador binario sano/enfermo.
-
-Estrategia:
-  1) warmup con backbone congelado (solo entrena la cabeza),
-  2) fine-tuning descongelando el backbone con LR menor.
-Selección del mejor modelo priorizando el RECALL de 'enfermo': en este caso de
-negocio el error costoso es dejar pasar una planta enferma como sana.
-
-Uso:
-    python -m src.model.train
-La parametrización se controla por variables de entorno (ver .env.example).
-"""
 import json
 from pathlib import Path
 

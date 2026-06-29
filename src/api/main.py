@@ -1,14 +1,3 @@
-"""API REST para clasificación de salud vegetal (imagen o video).
-
-Expone /predict, que recibe un archivo y devuelve un JSON estructurado con la
-predicción del modelo y la decisión de negocio. El modelo se carga UNA sola vez
-al arrancar el servicio (no por request), vía el ciclo de vida (lifespan).
-
-Levantar el servicio:
-    uvicorn src.api.main:app --reload
-Documentación interactiva (Swagger UI):
-    http://localhost:8000/docs
-"""
 import io
 import os
 import tempfile

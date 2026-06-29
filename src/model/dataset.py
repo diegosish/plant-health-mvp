@@ -1,9 +1,3 @@
-"""Carga de datos para clasificación binaria sano/enfermo sobre PlantVillage.
-
-PlantVillage trae 38 carpetas con nombres tipo `Tomato___healthy`,
-`Apple___Apple_scab`, etc. Aquí colapsamos esas clases a un problema binario
-con una regla de negocio explícita y reproducible.
-"""
 import random
 from pathlib import Path
 from typing import Dict, List, Tuple

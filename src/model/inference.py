@@ -1,18 +1,3 @@
-"""Capa de inferencia: clasificación de imagen o video sobre el modelo entrenado.
-
-Esta capa es SOLO modelo: dada una imagen o un video, devuelve la predicción del
-clasificador (label + confianza). Las reglas de negocio (umbral de decisión,
-acción a tomar) se aplican aguas arriba, en una capa separada. Así se preserva la
-separación modelo / reglas de negocio / API.
-
-El mismo clasificador de imágenes sirve para video: un video se procesa como una
-secuencia de frames muestreados; cada frame se clasifica y luego se agregan los
-resultados (ratio de frames enfermos + voto mayoritario).
-
-Uso desde terminal:
-    python -m src.model.inference ruta/a/imagen.jpg
-    python -m src.model.inference ruta/a/video.mp4
-"""
 import sys
 import time
 from pathlib import Path

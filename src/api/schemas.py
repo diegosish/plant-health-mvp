@@ -1,10 +1,3 @@
-"""Esquemas Pydantic v2 de entrada/salida de la API.
-
-La respuesta de /predict es una UNIÓN DISCRIMINADA por `input_type`: según si la
-entrada fue imagen o video, el cuerpo tiene una forma distinta. El discriminador
-permite a Pydantic validar y documentar ambos casos sin ambigüedad, y que /docs
-muestre los dos esquemas correctamente.
-"""
 from typing import Annotated, Literal, Union
 
 from pydantic import BaseModel, ConfigDict, Field
