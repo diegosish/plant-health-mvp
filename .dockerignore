@@ -1,0 +1,36 @@
+# ---- Datos: NO copiar el dataset al contenedor (son decenas de miles de imágenes) ----
+src/data/
+data/
+
+# ---- Entorno virtual ----
+venv/
+.venv/
+env/
+ENV/
+
+# ---- Artefactos de MLflow y entrenamiento ----
+mlruns/
+mlflow.db
+*.db
+
+# ---- Cache de Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+
+# ---- Git ----
+.git/
+.gitignore
+
+# ---- IDE / editores ----
+.vscode/
+.idea/
+*.swp
+
+# ---- Variables de entorno locales (se pasan en runtime, no se hornean) ----
+.env
+
+# ---- Docs (no se necesitan en runtime) ----
+*.md

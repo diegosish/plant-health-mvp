@@ -1,0 +1,39 @@
+# ---- Entorno virtual (NO se sube; se recrea con requirements.txt) ----
+venv/
+.venv/
+env/
+ENV/
+
+# ---- Datos: el dataset NO se sube (son decenas de miles de imágenes) ----
+src/data/
+data/
+
+# ---- Modelo entrenado y artefactos (pesan; opcional subir vía Releases/LFS) ----
+models/*.pth
+models/confusion_matrix.png
+models/classification_report.txt
+
+# ---- MLflow ----
+mlruns/
+mlflow.db
+*.db
+
+# ---- Cache de Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# ---- Variables de entorno locales (NO subir secretos) ----
+.env
+
+# ---- IDE / editores ----
+.vscode/
+.idea/
+*.swp
+
+# ---- Sistema operativo ----
+.DS_Store
+Thumbs.db
